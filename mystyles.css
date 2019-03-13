@@ -1,7 +1,6 @@
 <!DOCTYPE CSS>
-
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 
 p,h1,h2,h3{
    font-family: 'Montserrat', sans-serif;
@@ -14,18 +13,20 @@ h4{
   color:white;
   font-size:10px;
 }
-h1{
-  font-type:uppercase;
+p{
+  color:white;
 }
-h2{  
-   color:white;
-   order:(2);
-   font-size:40px;
-   margin: 10px 1px 10px 10px;
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+a:hover {
+  color: hotpink;
 }
 
 body{
-   margin: 0;
+  margin: 0;
   padding:0;
   background-image: url(https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true);
   background-repeat:repeat;
@@ -39,17 +40,8 @@ body{
 #left {
 	display: flex;
 	align-items: center;
-      }
-a {
-  color: grey;
-  text-decoration: none;
-}
-a:hover {
-  color: hotpink;
-}
-a:visited {
-  color: purple;
-}
+  
+    }
 div#left a {
 	margin: 0 20px;
  
@@ -59,97 +51,119 @@ div#left a {
 	border-radius: 5px;
   
     }
+* {box-sizing:border-box}
 
-
-.bigboi{
-  display:flex;
-  width:1500px;
-  height:900px;
-  border: 3px black;
-  }
-
-#blueboi{
-  display:flex;
-  content-direction:row;
-  flex-wrap:wrap;
-  height:800px;
-  width: 900px;
-  }
-
-#greenboi{
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: 0 auto;
   border: 20px solid white;
-  display:flex;
-  align-items:flex-end;
-  justify-content:flex-end;
-  padding:20px;
-  width: 900px;
-  height: 600px;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-image: url(https://image.freepik.com/free-photo/blue-succulent-black-background_42752-10.jpg);
-  }
+}
 
-#smolbois{
-  border: 2px solid white;
-  height: 200px;
-  width:290px;
-  display:cover;
-  padding:3px;
-  }
-#pinkboi{  
-  background-color:white;
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: hot pink;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext,.first {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+.muse, h2{
   display:flex;
   flex-wrap:wrap;
-  justify-content:flex-end;
-  align-self:flex-end;
-  height: 200px;
-  width: 500px;
-  margin: 20px;
-  }
-#liboi{
-  dispay:flex;
-  flex-direction: column;
-  align-content:flex-end;
-  text-align: right; 
-  width:200px;
-  height:200px
-}
-#user{
-  width: 200px;
-}
-#yellowboi{
-  width:500px;
-  height:600px;  
-  align-self:flex-end;
-  align-items:center;
-  margin: 20px;
-  background-color:white;
-  padding:10px 10px 10px 10px;
-  
-   }
-
-#purpleboi{
- 
-  width:600px;
-  hieght:900px;
-}
-
-.portlink{
-  display:flex;
-  flex-wrap:wrap;
+  content-flow:row;
   align-content:center;
-  justify-content: space-around;
-   max-width:1300px;
-  margin: 50px;
-  
- 
-}
+  justify-content:space-around;
+     }
 
-#port{
-  margin: 10px 10px 10px 10px;
-  image-size:cover;
+#twelve{
+  margin:20px 10px;
+  display:flex;
   width:300px;
-  height:180px;
+  height:200px;
+  image-size:cover;
+}
+#view{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  backgroung-image:url(https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true)
 }
 
 #bar{
@@ -162,28 +176,27 @@ div#left a {
 #small{
   width:40px;
   height:40px;
-
 }
 
 footer{
-   background-color: #9b9c89;
- background-blend-mode: multiply;
   display:flex;
   background-image:url(https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true);
   background-repeat:repeat;
-  
+   background-color: #9b9c89;
+  background-blend-mode: multiply;
 }
 #bot{
   display:flex;
-  background-image:url(https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true)
-  filter: brightness(50%);
   flex-direction:row;
+  background-image:url(https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true);
+  background-blend-mode: darken;
   width:1000px;
-  }
+}
 
 #smolport{
   width:100px;
   height:90px;
+
 }
 
 #read{
